@@ -1,0 +1,2 @@
+ErrorDocument 404 /etn6701/230/error/error.html
+DirectoryIndex noterror.html
