@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Table with Content</title>
+
+		<style type="text/css">
+			html, body {
+				width: 100vw;
+				height: 100vh;
+				margin: 0px;
+				padding: 0px;
+			}
+
+			header, footer {
+				width: 100%;
+				text-align: center;
+				background-color: grey;
+
+				border: 2px solid black;
+				border-right: none;
+				border-left: none;
+
+				font-weight: bold;
+				font-size: 2em;
+				line-height: 1.5em;
+			}
+
+			#Content {
+				display: table;
+				width: 100%;
+			}
+			#LeftContent {
+				width: 50%;
+				left: 0px;
+				display: table-cell;
+				padding-top: 5px;
+
+				float: left;
+			}
+			#RightContent {
+				width: 50%;
+				right: 0px;
+				display: table-cell;
+				padding-top: 5px;
+
+				float: right;
+			}
+
+			table {
+				border: 2px solid purple;
+				width: 100%;
+			}
+			th {
+				color: white;
+				background-color: black;
+			}
+			td {
+				border: 2px solid grey;
+				padding: 4px;
+			}
+			.lightGrey {
+				background-color: lightgrey;
+			}
+
+			.face {
+				margin-top: 5px;
+				width: 100%;
+				text-align: center;
+				position: relative;
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<header>
+			My Interests
+		</header>
+
+		<div id="Content">
+			<div id="LeftContent">
+				<table>
+				<tr>
+					<th colspan="3">Interests</th>
+				</tr>
+				<tr>
+					<td class="lightGrey">School</td>
+					<td class="lightGrey">Hobbies</td>
+					<td class="lightGrey">Other</td>
+				</tr>
+
+				<tr>
+					<td>Optimization</td>
+					<td>Snowboarding</td>
+					<td>Game Jams</td>
+				</tr>
+
+				<tr>
+					<td>Game Developement</td>
+					<td>Drawing</td>
+					<td>Running</td>
+				</tr>
+
+				<tr>
+					<td>Programming</td>
+					<td>Magic the Gathering</td>
+					<td>Working out</td>
+				</tr>
+
+				<tr>
+					<td>Map Generation</td>
+					<td>Achievment hunting</td>
+					<td>Streaming</td>
+				</tr>
+				</table>
+
+				<div class="face"><img src="../Images/Face.jpg" alt="Ethan"></div>
+			</div>
+
+			<div id="RightContent">
+				<div class="face"><img src="../Images/Magic.jpg" alt="Magic Card"></div>
+			</div>
+		</div>
+
+		<footer>
+			&copy;Ethan Nichols
+		</footer>
+	</body>
+</html>
