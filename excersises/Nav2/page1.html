@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Excersise Links</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<style>
+		#navlist {
+		padding: 0 1px 1px;
+		margin-left: 0;
+		font: bold 12px Verdana, sans-serif;
+		}
+
+		#navlist li {
+		list-style: none;
+		margin: 0;
+		border-top: 1px solid gray;
+		display: inline;
+		}
+
+		#navlist li a {
+		padding: 0.25em 0.5em 0.25em 0.75em;
+		border-top: 1em solid #AAB;
+		background: #CCD;
+		text-decoration: none;
+		}
+
+		#navlist li a:link { color: #448; }
+		#navlist li a:visited { color: #667; }
+
+		#navlist li a:hover {
+		border-color: #FE3;
+		color: #FFF;
+		background: #332;
+		}
+		
+		main {
+		text-align: center;
+		width: 70%;
+		margin: 0 auto;
+		}
+
+		#navlist li a#current
+{
+	border-color: #FE3;
+	background-color: grey;
+	color: black;
+}
+#navlist li a#current:hover
+{
+	border-color: #FE3;
+	background-color: #332;
+	color: #FFF;
+}
+
+iframe {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+		
+	</style>
+	</head>
+
+	<body>
+		<header>
+			<div id="navcontainer">
+				<ul id="navlist">
+					<li><a href="index.html">Item one</a></li>
+					<li id="active"><a href="page1.html" id="current">Item two</a></li>
+					<li><a href="page2.html">Item three</a></li>
+					<li><a href="page3.html">Item four</a></li>
+				</ul>
+			</div>
+		</header>
+
+		<iframe src="https://people.rit.edu/~lcb2374/230/"></iframe>
+	</body>
+</html>
