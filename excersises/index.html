@@ -3,21 +3,105 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Excersise Links</title>
+
+		<style>
+		#navlist {
+		padding: 0 1px 1px;
+		margin-left: 0;
+		font: bold 12px Verdana, sans-serif;
+		}
+
+		#navlist li {
+		list-style: none;
+		margin: 0;
+		border-top: 1px solid gray;
+		display: inline;
+		}
+
+		#navlist li a {
+		padding: 0.25em 0.5em 0.25em 0.75em;
+		border-top: 1em solid #AAB;
+		background: #CCD;
+		text-decoration: none;
+		}
+
+		#navlist li a:link { color: #448; }
+		#navlist li a:visited { color: #448; }
+
+		#navlist li a:hover {
+		border-color: #FE3;
+		color: #FFF;
+		background: #332;
+		}
+		
+		main {
+		text-align: center;
+		width: 70%;
+		margin: 0 auto;
+		}
+
+		#navlist li a#current{
+			border-color: #FE3;
+			background-color: grey;
+			color: black;
+		}
+		#navlist li a#current:hover{
+			border-color: #FE3;
+			background-color: #332;
+			color: #FFF;
+		}
+
+		body{
+			width: 100vw;
+			height: 100vh;
+			margin: 0px;
+			padding: 0px;
+			overflow: hidden;
+		}
+		
+		.menu {
+			background-color: grey;
+			height: 3em;
+			overflow: hidden;
+			margin: 2px;
+			transition: 1s;
+			text-align: center;
+		}
+		.menu:hover {
+			height: 6em;
+		}
+		p {
+			margin-bottom: 2em;
+		}
+		</style>
 	</head>
 
 	<body>
-	<p><a href="Crembulee">Crembulee</a></p>
-	<p><a href="Kadayif">Kaydayif</a></p>
-	<p><a href="tables.html">Tables</a></p>
-<<<<<<< HEAD
-	<p><a href="NavStart/page1.html">Navagation 1</a></p>
-	<p><a href="Nav2">Navagation 2</a></p>
-=======
-<<<<<<< HEAD
-	<p><a href="NavStart/page1.html">Navagation 1</a></p>
-	<p><a href="Nav2">Navagation 2</a></p>
-=======
->>>>>>> 83afda037fda50ee2da9de35d8d00cccfc779d45
->>>>>>> 058f120d4537f0f7a3f375354f4d4bc7973295e4
+
+		<div id="container">
+
+		<div id="header">
+		<h1 id="banner">Exersizses / Project Links</h1>
+		</div>
+
+		<div class="menu">
+			<p>ICEs</p>
+			<ul id="navlist">
+				<li><a href="Crembulee">Crembulee</a></li>
+				<li><a href="Kadayif">Kaydayif</a></li>
+				<li><a href="tables.html">Tables</a></li>
+				<li><a href="NavStart/page1.html">Navagation 1</a></li>
+				<li><a href="Nav2">Navagation 2</a></li>
+			</ul>
+		</div>
+
+		<div class="menu">
+			<p>Projects</p>
+			<ul id="navlist">
+				<li><a href="project1">Project 1</a></li>
+				<li><a href="#">Project 2</a></li>
+				<li><a href="#">Project 3</a></li>
+			</ul>
+		</div>
 	</body>
 </html>
