@@ -1,0 +1,155 @@
+/*
+#7F7F7F
+#3F3F3F
+
+#A54429
+#8C3923
+#722F1C
+*/
+
+body {
+	background-color: #3F3F3F;
+	margin: 0px;
+}
+
+#header {
+	width: 100%;
+	text-align: center;
+	background-color: #A54429;
+}
+#header h1 {
+	margin: 0px;
+}
+
+#navBar {
+	background-color: #722F1C;
+	display: flex;
+}
+#navBar a {
+	flex: 1;
+
+	min-width: 200px;
+	float: left;
+
+	text-align: center;
+	font-size: 1.5em;
+
+	border: 1px solid black;
+	border-top: none;
+}
+
+#gameLogo {
+	width: 100%;
+	text-align: center;
+	background-color: #7F7F7F;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+#centerContent {
+	width: 100%;
+	position: absolute;
+	align-content: center;
+}
+
+.description {
+	width: 60%;
+
+	min-width: 300px;
+
+	display: block;
+
+	background-color: #722F1C;
+	margin: auto;
+	margin-top: 10px;
+}
+
+.description h1 {
+	text-align: center;
+	border-bottom: 2px solid black;
+
+	color: white;
+}
+.description p, li {
+	font-size: 1.2em;
+	padding: 5px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	color: white;
+}
+.description a:link {
+	text-decoration: underline;
+}
+.description a:hover {
+	color: white;
+}
+
+a:link {
+	font-weight: bold;
+	color: black;
+	text-decoration: none;
+}
+a:visited {
+	color: black;
+}
+a:hover div {
+	background-color: #8C3923;
+	color: white;
+}
+a:active {
+	color: black;
+}
+
+.current div{
+	background-color: #A54429;
+	color: white;
+}
+
+.proposalDiv {
+	width: 60%;
+
+	display: block;
+	float: none;
+	margin: auto;
+
+	background-color: #722F1C;
+}
+
+@media screen and (max-width: 800px) {
+	#navBar {
+		background-color: #722F1C;
+		margin: auto;
+		display: block;
+	}
+
+	#navBar a {
+		min-width: 200px;
+
+		float: none;
+		text-align: center;
+		font-size: 1.5em;
+		display: block;
+
+		border: none;
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
+	}
+
+	.description {
+		width: 49%;
+
+		min-width: 300px;
+
+		float: none;
+		display: block;
+
+		background-color: #722F1C;
+		margin: auto;
+		margin-bottom: 0px;
+		margin-top: 10px;
+	}
+
+	img {
+		width: 100%;
+	}
+}
