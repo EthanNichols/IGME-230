@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Ethan Nichols IGME-230</title>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+	</head>
+
+	<body>
+		<header id="Banner" class="center greyBack blackBorder">
+			<h1>Ethan Nichols' Random Phrases 1</h1>
+		</header>
+
+		<div id="CenterBody">
+			<div>
+				<p id="phrase" class="center greyBack blackBorder"></p>
+			</div>
+		</div>
+
+		<script>
+		let phrases = ["A bird in the hand is worth two in the bush",
+						"All that glitters is not gold / All that glisters is not gold",
+						"Behind every great man there's a great woman", "Bread always falls buttered side down",
+						"Close your eyes and think of England",
+						"Cut off your nose to spite your face",
+						"Do unto others as you would have them do to you",
+						"Don't try to teach your Grandma to suck eggs",
+						"Fie, foh, fum, I smell the blood of an Englishman",
+						"Hark, hark! the lark at heaven's gate sings", ];
+		let phraseDisplay = document.querySelector("#phrase");
+
+		phrase.innerHTML = phrases[Math.floor(Math.random() * phrases.length)]
+	</script>
+	</body>
+</html>

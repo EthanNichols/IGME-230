@@ -1,0 +1,85 @@
+<!--
+Answers to the questions:
+
+1) Each element only has one parent
+
+2) Apple, Facebook, Google, Geocities
+
+3) Apple
+
+4) Geocities
+
+5) The GeoCities <li> tag
+
+6) The Facebook <li> tag
+
+7) <a href="http://www.google.com">Google</a>
+
+8) <ul>
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Web Apps-4</title>
+	<style>
+		body{border:1px solid gray;}
+	</style>
+</head>
+<body>
+<h1>My Favorites</h1>
+<h2>My Favorite Colors</h1>
+
+<ol id="colorsList">
+</ol>
+
+<h2>My Favorite Foods</h1>
+
+<ol id="foodsList">
+</ol>
+
+<h2>My Favorite Links</h1>
+
+<ol id="linksList">
+</ol>
+
+<script>
+let colors = ["red","green","blue","purple","pink"];
+let foods = ["apples", "eggs", "chicken", "brocolli"]; // add some foods
+
+// Optional (worth an extra 5 points) - can you figure out how to pull the key
+// and value from the links object literal?
+let links = {
+		"RIT": "http://www.rit.edu",
+		"RWAG" : "https://www.facebook.com/RWAGclub",
+		"New Media Club" : "http://newmediaclub.cias.rit.edu"
+	}
+
+colors.forEach(function(element) {
+	let newItem = document.createElement("li");
+	newItem.innerHTML = element;
+	document.querySelector("#colorsList").append(newItem);
+});
+
+foods.forEach(function(element) {
+	let newItem = document.createElement("li");
+	newItem.innerHTML = element;
+	document.querySelector("#foodsList").append(newItem);
+});
+
+for(let key in links) {
+	if (!links.hasOwnProperty(key)) continue;
+
+	let newItem = document.createElement("li");
+	let link = document.createElement("a");
+
+	newItem.append(link);
+	link.innerHTML = key;
+	link.href = link[key];
+
+	document.querySelector("#linksList").append(newItem);
+}
+
+</script>
+</body>
+</html>
