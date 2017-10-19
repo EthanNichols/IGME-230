@@ -61,3 +61,12 @@ p {
 .greyBack {
 	background-color: #494949;
 }
+
+button {
+	padding: 5px;
+	background-color: #787878;
+}
+
+button:hover {
+	background-color: #989898;
+}
