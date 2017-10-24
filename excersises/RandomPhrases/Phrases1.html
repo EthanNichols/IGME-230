@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Ethan Nichols IGME-230</title>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+	</head>
+
+	<body>
+		<header id="Banner" class="center greyBack blackBorder">
+			<h1>Ethan Nichols' Random Phrases 1</h1>
+		</header>
+
+		<div id="CenterBody">
+			<div>
+				<p id="phrase" class="center greyBack blackBorder"></p>
+			</div>
+		</div>
+
+		<script>
+		let phrases = ["As difficult as nailing jelly to a tree",
+						"Barking up the wrong tree",
+						"Can't see the wood for the trees",
+						"Chip off the old block",
+						"Cut out the dead wood",
+						"I lit a fire, isn't it good, Norwegian wood?",
+						"Knock on wood",
+						"Not out of the woods yet",
+						"Run Forrest, Run!",
+						"Under the greenwood tree", ];
+		let phraseDisplay = document.querySelector("#phrase");
+
+		phrase.innerHTML = phrases[Math.floor(Math.random() * phrases.length)]
+	</script>
+	</body>
+</html>

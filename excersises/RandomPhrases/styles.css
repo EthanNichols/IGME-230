@@ -1,0 +1,63 @@
+@font-face {
+	font-family: "embedFont";
+	src: url("Arvo-Regular.ttf") format("truetype");
+}
+
+html, body {
+	width: 100vw;
+	height: 100vh;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+
+	font-family: "embedFont";
+}
+
+body {
+	display: table-cell;
+}
+
+h1 {
+	margin: 0px;
+}
+p {
+	padding: 10px;
+}
+
+#Banner {
+	width: 100%;
+	min-height: 5%;
+	color: white;
+}
+
+#CenterBody {
+	width: 100%;
+	height: 95%;
+
+	display: table;
+	border-spacing: 5px;
+
+	background-image: url("Bg.jpg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+#CenterBody div {
+	display: table-cell;
+	text-align: center;
+	padding: 10%;
+
+	font-size: 1.5em;
+	vertical-align: middle;
+	color: white;
+}
+
+.center {
+	vertical-align: middle;
+	text-align: center;
+}
+.blackBorder {
+	border: 1px solid black;
+}
+.greyBack {
+	background-color: #494949;
+}
