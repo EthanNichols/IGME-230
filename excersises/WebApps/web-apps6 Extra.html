@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Web Apps-6 Extra</title>
+	<style>
+		body{
+			font-family:sans-serif;
+		}
+		#colorform{
+			background-color:#dfecdf;
+			color: #111;
+			padding:1em;width:400px;
+		}
+		#colorform p#info{
+			background-color:white;
+			color: black;
+			width:300px;
+			height:100px;
+			padding:.5em;
+		}
+		
+		#colorform legend{ 
+			font-weight:bold;
+			font-size:1.2em;
+		}
+	</style>
+</head>
+<body>
+
+<div id="colorform">
+	<legend>Choose your favorite color!</legend>
+	<p><input type="checkBox" name="colorGroup" id="colorGroup" value="red" /> Red</p>
+	<p><input type="checkBox" name="colorGroup" id="colorGroup" value="green" /> Green</p>
+	<p><input type="checkBox" name="colorGroup" id="colorGroup" value="blue" /> Blue</p>
+	<p><button id="colorButton" type="button">Submit</button></p>
+	<p id="info"></p>
+</div>
+
+<script>
+
+	let radioButtons = document.querySelectorAll("#colorGroup");
+	radioButtons.forEach(function(element) {
+		element.addEventListener("change", DisplayColor);
+	});
+
+
+	let submitButton = document.querySelector("#colorButton");
+	submitButton.addEventListener("click", FinalizeColor);
+
+	function DisplayColor() {
+		let selected = "";
+
+		radioButtons.forEach(function(element) {
+			if (element.checked && selected == "") {
+				selected = element.value;
+			} else if (element.checked) {
+				selected += " and " + element.value;
+			}
+		});
+
+		if (selected != "") {
+			document.querySelector("#info").innerHTML = 'You have selected ' + selected + '!';
+		} else {
+			document.querySelector("#info").innerHTML = "";
+		}
+	}
+
+	function FinalizeColor() {
+		let selected = "";
+
+		radioButtons.forEach(function(element) {
+			if (element.checked && selected == "") {
+				selected = element.value;
+			} else if (element.checked) {
+				selected += " and " + element.value;
+			}
+		});
+
+		if (selected != null) {
+			document.querySelector("legend").style.color = selected.value;
+			document.querySelector("#info").innerHTML = 'Your FINAL CHOICE is ' + selected + '!';
+		}
+	}
+
+</script>
+</body>
+</html>

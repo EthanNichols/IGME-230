@@ -5,30 +5,30 @@
 		<title>Excersise Links</title>
 
 		<style>
-		#navlist {
+		.navlist {
 		padding: 0 1px 1px;
 		margin-left: 0;
 		font: bold 12px Verdana, sans-serif;
 		}
 
-		#navlist li {
+		.navlist li {
 		list-style: none;
 		margin: 0;
 		border-top: 1px solid gray;
 		display: inline;
 		}
 
-		#navlist li a {
+		.navlist li a {
 		padding: 0.25em 0.5em 0.25em 0.75em;
 		border-top: 1em solid #AAB;
 		background: #CCD;
 		text-decoration: none;
 		}
 
-		#navlist li a:link { color: #448; }
-		#navlist li a:visited { color: #448; }
+		.navlist li a:link { color: #448; }
+		.navlist li a:visited { color: #448; }
 
-		#navlist li a:hover {
+		.navlist li a:hover {
 		border-color: #FE3;
 		color: #FFF;
 		background: #332;
@@ -40,12 +40,12 @@
 		margin: 0 auto;
 		}
 
-		#navlist li a#current{
+		.navlist li a#current{
 			border-color: #FE3;
 			background-color: grey;
 			color: black;
 		}
-		#navlist li a#current:hover{
+		.navlist li a#current:hover{
 			border-color: #FE3;
 			background-color: #332;
 			color: #FFF;
@@ -86,7 +86,7 @@
 
 		<div class="menu">
 			<p>ICEs</p>
-			<ul id="navlist">
+			<ul class="navlist">
 				<li><a href="Crembulee">Crembulee</a></li>
 				<li><a href="Kadayif">Kaydayif</a></li>
 				<li><a href="tables.html">Tables</a></li>
@@ -97,8 +97,16 @@
 		</div>
 
 		<div class="menu">
+			<p>Homeworks</p>
+			<ul class="navlist">
+				<li><a href="RandomPhrases/Phrases1.html">Random Phrases 1</a></li>
+				<li><a href="RandomPhrases/Phrases2.html">Random Phrases 2</a></li>
+			</ul>
+		</div>
+
+		<div class="menu">
 			<p>Projects</p>
-			<ul id="navlist">
+			<ul class="navlist">
 				<li><a href="project1">Project 1</a></li>
 				<li><a href="#">Project 2</a></li>
 				<li><a href="#">Project 3</a></li>

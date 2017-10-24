@@ -1,0 +1,83 @@
+<!--
+Answers to the questions:
+
+1) A block is an area of code limited by curly braces defining different scopes.
+
+2) Scope is the different sections of code the keep information from being accessed in places that don't need to have access to it.
+
+3) That gives the variable a global scope and is able to be accessed by everything
+
+4) It keeps that variable inside of the the for loop, so once the for loop ends the variables can't be accessed again
+
+5) The debugger statement will suspend execution of the program and allow us to inspect both the value of the variables, and their scope. 
+
+6) Don't Repeat Yourself
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Web Apps-5</title>
+	<style>
+		body{border:1px solid gray;}
+	</style>
+</head>
+<body>
+<h1>My Favorites</h1>
+<h2>My Favorite Colors</h1>
+
+<ol id="colorsList">
+</ol>
+
+<h2>My Favorite Foods</h1>
+
+<ol id="foodsList">
+</ol>
+
+<h2>My Favorite Links</h1>
+
+<ol id="linksList">
+</ol>
+
+<script>
+let colors = ["red","green","blue","purple","pink"];
+let foods = ["apples", "eggs", "chicken", "brocolli"]; // add some foods
+
+// Optional (worth an extra 5 points) - can you figure out how to pull the key
+// and value from the links object literal?
+let links = {
+		"RIT": "http://www.rit.edu",
+		"RWAG" : "https://www.facebook.com/RWAGclub",
+		"New Media Club" : "http://newmediaclub.cias.rit.edu"
+	}
+
+CreateList(document.querySelector("#colorsList"), colors);
+CreateList(document.querySelector("#foodsList"), foods);
+
+for(let key in links) {
+	if (!links.hasOwnProperty(key)) continue;
+
+	let newItem = document.createElement("li");
+	let link = document.createElement("a");
+
+	newItem.append(link);
+	link.innerHTML = key;
+	link.href = link[key];
+
+	document.querySelector("#linksList").append(newItem);
+}
+
+function CreateList(listElement, array) {
+
+	if (array == null) {array = ["Puppydogs", "Butterflies", "Lillipops"];}
+
+	array.forEach(function(element) {
+	let newItem = document.createElement("li");
+	newItem.innerHTML = element;
+	listElement.append(newItem);
+});
+}
+
+</script>
+</body>
+</html>
