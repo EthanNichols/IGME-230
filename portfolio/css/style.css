@@ -1,0 +1,147 @@
+/* Table of Contents
+––––––––––––––––––––––––––––––––––––––––––––––
+- General Content
+- Typography
+- Header & Navigation
+- Images & Media
+- Footer
+- Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Fonts
+–––––––––––––––––––––––––––––––––––––––––––––– */
+/* latin */
+@font-face {
+  font-family: 'Abel';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Abel Regular'), local('Abel-Regular'), url("../fonts/font1.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Satisfy';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Satisfy Regular'), local('Satisfy-Regular'), url("../fonts/font2.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+/* General Content
+–––––––––––––––––––––––––––––––––––––––––––––– */
+.main{padding-top:3%;}
+.row{padding: 2% 0;}
+.green{background-color:#634B66;}
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––– */
+body{
+	font-family: 'Abel',sans-serif;
+	font-size: 1.5em;
+	color: #000;
+}
+h2{
+	font-family: 'Satisfy', cursive;
+	font-size: 3em;
+	margin: 0.67em;
+}
+h2.bio{color:#362938;}
+p.bio{color: #fff;}
+h2.contact{color:#362938;}
+p.contact{color: #362938; font-size: 1.5em;}
+
+/* Header & Navigation
+–––––––––––––––––––––––––––––––––––––––––––––– */
+header.main_nav{
+	padding: 1% 0;
+	display: block;
+	text-align: center;
+}
+.logo{
+	margin-bottom: 0px;
+	text-align: center;
+}
+.logo a{
+	font-size: 3em;
+	color: #fff;
+	text-decoration: none;
+	border: 3px solid #fff;
+	text-transform: uppercase;
+	padding: 2px 10px 0 10px;
+	margin: 0;
+}
+.logoImg{
+	left: 0px;
+	height: 100%;
+	margin: 0px;
+}
+.logoImg:hover {
+	opacity: 1;
+}
+.phrase {
+	font-size: 1.5em;
+	margin: 0px;
+	color: white;
+	text-align: center;
+}
+/* Bio & Information
+–––––––––––––––––––––––––––––––––––––––––––––– */
+.resume {
+	text-decoration: underline;
+	color: #362938;
+}
+
+.resume:hover {
+	text-decoration: underline;
+	color: #9590A8;
+}
+
+/* Images & Media
+–––––––––––––––––––––––––––––––––––––––––––––– */
+img{max-width: 100%;}
+img.avatar{
+	border-radius: 400px;
+	border: 5px solid #fff;
+}
+img.avatar:hover {opacity: 1;}
+img:hover{opacity:0.8;}
+
+/* Footer
+–––––––––––––––––––––––––––––––––––––––––––––– */
+ul.social{
+	display: block;
+	margin: 5% 0;
+	list-style-type: none;
+	text-align: center;
+}
+ul.social li{
+	font-size: 3em;
+	display: inline;
+	padding: 0 2%;
+}
+ul.social li a{
+	color: #FFF;
+}
+ul.social li.twitter a:hover{color: rgb(0,172,237);}
+ul.social li.linkedin a:hover{color: rgb(0, 123,182);}
+ul.social li.github a:hover{color: rgb(0, 0, 0);}
+
+p.copyright{
+	text-align: center;
+	color: #FFF;
+	font-size: 1em;
+}
+
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––– */
+/* Larger than mobile */
+@media (max-width: 479px) {
+	.logo a{font-size: 2em;}
+	.main{padding-top:15%;}
+	.portfolio img{margin-bottom: 10%;}
+	img.avatar{margin-top: 15%;}
+	h2.bio{font-size: 2.5em;}
+	p.bio{font-size: 1.25em;color: #FFF;}
+	ul.social li a{font-size: .75em;}
+	.phrase {font-size: .9em;}
+}

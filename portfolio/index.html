@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Ethan Nichols | Software Developer</title>
+  <meta name="description" content="Portfolio for Software Developer Ethan Nichols.">
+  <meta name="author" content="Ethan Nichols">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
+   <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->  
+  <script src="scripts/ajax.js"></script>
+  	
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/Logo.png">
+
+</head>
+<body>
+
+<header class="main_nav green">
+	<div class="container">
+		<img class="logoImg" src="images/Logo.png" alt="Logo"/>
+
+		<div class="twelve columns">
+			<div class="logo"><a>Ethan Nichols</a></div>
+			<p class="phrase">I create the tools that make your game</p>
+		</div>
+	</div>
+</header>
+
+<div class="container main">
+	<div class="row">
+		<div class="four columns portfolio">
+			<a class="image-link" href="images/ProcGen.png" title="Hello"><img src="images/ProcGen.png" alt="Procedural Generation" /></a>
+		</div>
+		<div class="four columns portfolio">
+			<a class="image-link" href="images/CardGame.png"><img src="images/CardGame.png" alt="Cards of Power" /></a>
+		</div>
+		<div class="four columns portfolio">
+			<a class="image-link" href="images/GalaxyVendetta.png"><img src="images/GalaxyVendetta.png" alt="Galaxy Vendetta" /></a>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="four columns portfolio">
+			<a class="image-link" href="images/EvoDiceWars.png"><img src="images/EvoDiceWars.png" alt="Evolutionary Dice Wars" /></a>
+		</div>
+		<div class="four columns portfolio">
+			<a class="image-link" href="images/AncientPuzzle.png"><img src="images/AncientPuzzle.png" alt="The Ancient Puzzle"/></a>
+		</div>
+		<div class="four columns portfolio">
+			<a class="image-link" href="images/FBYV.png"><img src="images/FBYV.png" alt="Full Browser YouTube Videos" /></a>
+		</div>
+	</div>
+</div><!--Container-->
+
+<div class="row green">
+	<div class="container">
+		<div class="four columns">
+			<img class="avatar" src="images/Face.png" alt="Ethan Nichols"/>
+		</div>
+		<div class="eight columns">
+			<h2 class="bio">About Me</h2>
+			<p class="bio">I am a second year Game Design and Developement major at the Rochester Institute of Technology. I prefer tool developement and project management rather than focusing only on game mechanics and game play. I have an interest in lower level languaged and optimization of code as well as creating tools that are useful for game developement. I am currently looking for a job for the 2018 summer as a intern software developer.</p>
+		</div>
+	</div>
+</div><!--Row Green-->
+
+<div class="row">
+	<div class="container">
+		<div class="four columns">
+			<a class="resume" href="documents/Resume.pdf" title="Resume"><h2 class="bio">Resume</h2></a>
+		</div>
+		<div class="eight columns">
+			<h2 class="contact">Contact</h2>
+			<p class="contact">Streetsboro, Ohio</p>
+			<p class="contact">Ethan.Thomas.Nichols@gmail.com</p>
+		</div>
+	</div>
+</div><!--Row Green-->
+	
+<footer class="green">
+	<div class="container">
+		<div class="row twelve columns">
+			<ul class="social">
+			<li class="twitter"><a href="https://twitter.com/EthanTNichols" title="Twitter"><i class="fa fa-twitter fa-lg"></i></a></li>
+			<li class="linkedin"><a href="https://www.linkedin.com/in/ethantnichols/" title="LinkedIn"><i class="fa fa-linkedin fa-lg"></i></a></li>
+			<li class="github"><a href="https://github.com/EthanNichols" title="Github"><i class="fa fa-github fa-lg"></i></a></li>
+			</ul>
+		</div>
+		<div class="row twelve columns">
+			<p class="copyright">&copy; 2017 Ethan Nichols. All Rights Reserved. | Built using: Lynda.com | Magnific Popup</p>
+		</div>
+	</div>
+</footer>
+	
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="scripts/jquery.magnific-popup.js"></script>
+  <script type="text/javascript">
+	 $('.image-link').magnificPopup({ 
+  type: 'image',
+  mainClass: 'mfp-with-zoom', // this class is for CSS animation below
+
+  zoom: {
+    enabled: true, // By default it's false, so don't forget to enable it
+
+    duration: 300, // duration of the effect, in milliseconds
+    easing: 'ease-in-out', // CSS transition easing function 
+
+    // The "opener" function should return the element from which popup will be zoomed in
+    // and to which popup will be scaled down
+    // By defailt it looks for an image tag:
+    opener: function(openerElement) {
+      // openerElement is the element on which popup was initialized, in this case its <a> tag
+      // you don't need to add "opener" option if this code matches your needs, it's defailt one.
+      return openerElement.is('img') ? openerElement : openerElement.find('img');
+    }
+  }
+
+});	</script>
+</body>
+</html>
